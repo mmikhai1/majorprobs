@@ -226,18 +226,18 @@
         </header>
         <div class="content style4 featured">
             <div class="container 75%">
-                <form method="post" action="send_email.php">
+                <form method="post" action="send_form_email.php">
                     <div class="row 50%">
                         <div class="col-md-6 col-xs-12">
-                            <input type="text" placeholder="Name" required data-error="Please enter your name"/>
+                            <input type="text" name="name" placeholder="Name" required data-error="Please enter your name"/>
                         </div>
                         <div class="col-md-6 col-xs-12">
-                            <input type="text" placeholder="Email" required data-error="Please enter your email"/>
+                            <input type="text" name="email" placeholder="Email" required data-error="Please enter your email"/>
                         </div>
                     </div>
                     <div class="row 50%">
                         <div class="col-md-12 col-xs-12">
-                            <textarea name="message" placeholder="Message" required data-error="Write your message"></textarea>
+                            <textarea name="comments" placeholder="Message" required data-error="Write your message"></textarea>
                         </div>
                     </div>
                     <div class="row">
