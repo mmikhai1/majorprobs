@@ -50,34 +50,39 @@
                 <section>
                     <div class="content style4 featured">
                         <div class="container 75%">
-                            <form method="post" action="#">
-                                <div class="row 50%">
-                                    <div class="col-md-6 col-xs-12">
-                                        <input type="text" placeholder="Name" />
-                                    </div>
-                                    <div class="col-md-6 col-xs-12">
-                                        <input type="text" placeholder="Email" />
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="col-md-12 col-xs-12">
-                                        <textarea name="message" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <ul class="actions">
-                                            <li>
-                                                <input type="submit" class="button" value="send message" />
-                                            </li>
-                                            <li>
-                                                <input type="reset" class="button alt" value="clear form" />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </form>
+                <form method="post" action="send_form_email.php">
+                    <div class="row 50%">
+                        <div class="col-md-6 col-xs-12">
+                            <input type="text" name="name" placeholder="Name" required data-error="Please enter your name"/>
                         </div>
+                        <div class="col-md-6 col-xs-12">
+                            <input type="text" name="email" placeholder="Email" required data-error="Please enter your email"/>
+                        </div>
+                    </div>
+                    <div class="row 50%">
+                        <div class="col-md-12 col-xs-12">
+                            <input type="text" name="subject" placeholder="Subject" required data-error="Please enter your subject"/>
+                        </div>
+                    </div>
+                    <div class="row 50%">
+                        <div class="col-md-12 col-xs-12">
+                            <textarea name="comments" placeholder="Message" required data-error="Write your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="actions">
+                                <li>
+                                    <input type="submit" class="button" value="send message" />
+                                </li>
+                                <li>
+                                    <input type="reset" class="button alt" value="clear form" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
                     </div>
                 </section>
             </div>

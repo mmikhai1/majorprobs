@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "michael.majorprobs@gmail.com";
-    $email_subject = "Your email subject line";
+    $email_subject = $_POST['subject'];
  
     function died($error) {
         // your error code can go here
@@ -18,6 +18,7 @@ if(isset($_POST['email'])) {
     // validation expected data exists
     if(!isset($_POST['name']) ||
         !isset($_POST['email']) ||
+        !isset($_POST['subject']) ||
         !isset($_POST['comments'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
